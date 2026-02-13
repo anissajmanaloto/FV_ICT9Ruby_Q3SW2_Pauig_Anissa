@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 SW3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+     body{
+           background-image: url('https://i.pinimg.com/originals/36/36/26/363626108468d89388b7873ccacc3a92.gif');
+           background-size: cover;
+           background-repeat: no-repeat;
+           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+        .calcu{
+            background-color: rgb(245, 225, 225);
+            width: 1000px;          
+            padding: 30px;    
+            margin: 50px auto;  
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+  <a class="navbar-brand" href=""></a>
+    
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgba(2, 74, 133);">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgba(173, 35, 88);">About Us</a>
+        </li>
+
+      </ul>
+
+      <form class="d-flex">
+
+      <input class="form-control me-2" type="text" placeholder="Search">
+        
+      <button class="btn btn-light" type="button">Search</button>
+
+      <button type="button" class="btn btn-light" onclick="window.location.related()">Refresh</button>
+
+      </form>
+    </div>
+
+</div>
+</nav>
+    
+<br>
+
+   <div class="calcu">
+
+    <h4 class="text-center">Enter budget for your spree!</h4>
+
+    <div class="text-center container">
+        <br>
+        <p class="text-center text-light display-5" id="answer"></p>
+
+        <script>
+            var a = "Basic Calculator";
+            var b = 0;
+            document.getElementById("header2").innerHTML = a;
+            </script>
+
+    <form action="#">
+        <label for="num1">Enter first number</label>
+        <input type="number" id="num1" class="form-control" placeholder="type here.." required>
+
+        <br>
+
+           <button type="button" class="btn btn-light" onmouseover="calculate();">Determine</button>
+
+    </form>
+    <script>
+
+            document.getElementById('instruct').innerHTML="Enter a number and calculate to calculate its sum";
+
+        function calculate(){
+            var num1 = document.getElementById('num1').value;
+            var sum = Number(num1) * 0.1;
+            var compare = Number(num1) === sum;
+
+            alert("The sum is:" + sum + "\n" + "Is the number equal type and value to its sum?" + compare);//concatenation
+        }
+    </script>
+</div>
+</div>
+
+</body>
+</html>
